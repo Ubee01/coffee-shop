@@ -7,110 +7,308 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
-      <img class="logo" src="media/logo.png" alt="Bean scene logo" />
+    <main>
+      <header>
+        <img class="logo" src="media/logo.png" alt="Bean scene logo" />
 
-      <ul class="menu">
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About us</li>
-        <li>Contact Us</li>
-      </ul>
+        <nav>
+          <ul class="menu">
+            <li><a href=""> Home </a></li>
+            <li><a href=""> Menu </a></li>
+            <li><a href=""> About us </a></li>
+            <li><a href=""> Contact Us </a></li>
+          </ul>
 
-      <div class="right-items">
-        <a class="btn flat" href="#">Sign in</a>
+          <ul class="menu" id="mobile-navigation" popover>
+            <button
+              popovertarget="mobile-navigation"
+              popovertargetaction="hide"
+              class="menu-close-btn"
+            >
+              <span class="material-icons"> close </span>
+            </button>
 
-        <a class="btn solid">Sign up</a>
-      </div>
-    </header>
+            <li><a href=""> Home </a></li>
+            <li><a href=""> Menu </a></li>
+            <li><a href=""> About us </a></li>
+            <li><a href=""> Contact Us </a></li>
+          </ul>
+        </nav>
 
-    <section class="hero">
-      <div class="hero-texts-cta">
-        <div class="hero-texts">
-          <p>We've got your morning covered with</p>
-          <h1>Coffee</h1>
+        <div class="right-items">
+          <button
+            type="button"
+            class="menu-btn"
+            popovertarget="mobile-navigation"
+            popovertargetaction="show"
+          >
+            <span class="material-icons menu-icon"> menu </span>
+          </button>
+
+          <div class="links-wrapper">
+            <a class="btn flat" href="#">Sign in</a>
+            <a class="btn solid">Sign up</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-texts-cta">
+          <div class="hero-texts">
+            <p>We've got your morning covered with</p>
+            <h1>Coffee</h1>
+            <p>
+              It is best to start your day with a cup of coffee . Discover the
+              best flavours cofee you will ever have , we provide the best for
+              our customers
+            </p>
+          </div>
+          <a class="btn solid">Order now</a>
+        </div>
+      </section>
+
+      <section class="discovery-section">
+        <div class="left">
+          <div class="section-heading">
+            <h2>Discover the best coffee</h2>
+            <p>
+              Bean scene is a coffee shop that provides you with quality cofee
+              that helps build your productivity and boost your mood.Having a
+              cup of coffee is good, but having a cup of real coffee is greater.
+              There is no doubt you will enjoy this coffee more than others
+              you've ever tasted
+            </p>
+          </div>
+
+          <a class="btn solid">Learn more</a>
+        </div>
+
+        <img class="left-blast" src="media/coffee_blast.png" />
+
+        <div class="discovery-image">
+          <img src="media/image.png" alt="brown cup" />
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="section-heading center">
+          <h2>Enjoy a new blend of coffee style</h2>
           <p>
-            It is best to start your day with a cup of coffee . Discover the
-            best flavours cofee you will ever have , we provide the best for our
-            customers
+            Explore all flavours of coffee with us. There is always a new cup
+            worth experiencing
           </p>
         </div>
-        <a class="btn solid">Order now</a>
-      </div>
-    </section>
 
-    <section class="discovery-section">
-      <div class="left">
+        <div class="categories-cards-wrapper grid-4">
+          <div class="product-card">
+            <img src="media/Rectangle 9.png" />
+            <div class="info">
+              <h3>Macchiato</h3>
+              <p>cofee 50% | milk 50%</p>
+              <small>$8.50</small>
+            </div>
+            <a class="btn solid">Order now</a>
+          </div>
+
+          <div class="product-card">
+            <img src="media/Rectangle 11.png" />
+            <div class="info">
+              <h3>Macchiato</h3>
+              <p>cofee 50% | milk 50%</p>
+              <small>$8.50</small>
+            </div>
+            <a class="btn solid">Order now</a>
+          </div>
+          <div class="product-card">
+            <img src="media/Rectangle 13.png" />
+            <div class="info">
+              <h3>Macchiato</h3>
+              <p>cofee 50% | milk 50%</p>
+              <small>$8.50</small>
+            </div>
+            <a class="btn solid">Order now</a>
+          </div>
+          <div class="product-card">
+            <img src="media/Rectangle 13.png" />
+            <div class="info">
+              <h3>Macchiato</h3>
+              <p>cofee 50% | milk 50%</p>
+              <small>$8.50</small>
+            </div>
+            <a class="btn solid">Order now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose-us">
+        <img class="right-blast" src="media/coffee_blast (1).png" />
+        <div class="section-heading center">
+          <h2>Why are we diffrent?</h2>
+          <p>We dont just make your coffee, we make your day !</p>
+        </div>
+        <div class="reasons grid-4">
+          <div class="listed-reasons">
+            <img src="media/coffee-beans 1.png" alt="coff" />
+            <h3>Supreme Beans</h3>
+            <p>Beans that provide great taste</p>
+          </div>
+
+          <div class="listed-reasons">
+            <img src="media/badge 1.png" alt="coff" />
+
+            <h3>High quality</h3>
+            <p>We provide the highest quality</p>
+          </div>
+
+          <div class="listed-reasons">
+            <img src="media/coffee-cup 1.png" alt="coff" />
+
+            <h3>Extraordinary</h3>
+            <p>Coffee like youve never tasted before</p>
+          </div>
+
+          <div class="listed-reasons">
+            <img src="media/best-price 1.png" alt="coff" />
+
+            <h3>Affordable Price</h3>
+            <p>Our coffee price is easy to afford</p>
+          </div>
+        </div>
+        <div class="cta-container">
+          <p>
+            Great ideas start with a great coffee, Lets help you achieve that
+          </p>
+
+          <h2>Get Started today.</h2>
+          <a class="btn solid">Join Us</a>
+        </div>
+      </section>
+
+      <section class="opportunity">
         <div class="section-heading">
-          <h2>Discover the best coffee</h2>
+          <h2>Get a chance to have an amazing morning</h2>
           <p>
-            Bean scene is a coffee shop that provides you with quality cofee
-            that helps build your productivity and boost your mood.Having a cup
-            of coffee is good, but having a cup of real coffee is greater. There
-            is no doubt you will enjoy this coffee more than others you've ever
-            tasted
+            we are giving you a one time oportunity to experience a better life
+            with coffee
           </p>
+          <a class="btn solid">Order now </a>
         </div>
 
-        <a class="btn solid">Learn more</a>
-      </div>
+        <div class="opp-image">
+          <img src="media/Frame 1.png" alt="cup" />
+        </div>
+      </section>
 
-      <div class="discovery-image">
-        <img src="media/image.png" alt="brown cup" />
-      </div>
-    </section>
+      <section class="feedback">
+        <div class="section-heading center">
+          <h2>Our coffee perfection feedback</h2>
+          <p>our customers have amazing things to say about us</p>
+          <img class="right-blast" src="media/coffee_blast (1).png" />
+        </div>
+        <div class="review">
+          <div class="johnny">
+            <span>“</span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset.....
 
-    <section class="categories">
-      <div class="section-heading center">
-        <h2>Enjoy a new blend of coffee style</h2>
-        <p>
-          Explore all flavours of coffee with us. There is always a new cup
-          worth experiencing
-        </p>
-      </div>
+            <h2 class="name">Jonny Thomas</h2>
 
-      <div class="all-categories">
-        <div class="product-card">
-          <img src="media/Rectangle 9.png" />
-          <div class="info">
-            <h3>Macchiato</h3>
-            <p>cofee 50% | milk 50%</p>
-            <small>$8.50</small>
+            <p>Project Manager</p>
           </div>
-          <a class="btn solid">Order now</a>
+
+          <img src="media/IMG_4506 (1).jpg" />
+        </div>
+        <img class="left-blast" src="media/coffee_blast (2).png" />
+      </section>
+
+      <section class="subcription-and-footer">
+        <div class="subscribe">
+          <div>
+            <div class="section-heading center">
+              <h2>Our coffee perfection feedback</h2>
+              <p>our customers have amazing things to say about us</p>
+            </div>
+
+            <input type="text" name="email" placeholder="Enter your mail" />
+            <button>subscribe</button>
+          </div>
         </div>
 
-        <div class="product-card">
-          <img src="media/Rectangle 11.png" />
-          <div class="info">
-            <h3>Macchiato</h3>
-            <p>cofee 50% | milk 50%</p>
-            <small>$8.50</small>
+        <img class="left-cup" src="media/pngwing 1.png" />
+        <img class="right-cup" src="media/pngwing 2.png" />
+
+        <div class="footer">
+          <div class="column-one">
+            <img class="logo" src="media/logo.png" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="socials">
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-brands fa-youtube"></i></span>
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span><i class="fa-brands fa-square-instagram"></i></span>
+            </div>
           </div>
-          <a class="btn solid">Order now</a>
-        </div>
-        <div class="product-card">
-          <img src="media/Rectangle 13.png" />
-          <div class="info">
-            <h3>Macchiato</h3>
-            <p>cofee 50% | milk 50%</p>
-            <small>$8.50</small>
+          <div class="about column-two">
+            <h2>About</h2>
+            <div class="sub-about">
+              <p>Menu</p>
+              <p>Features</p>
+              <p>News & Blogs</p>
+              <p>Help & Supports</p>
+            </div>
           </div>
-          <a class="btn solid">Order now</a>
-        </div>
-        <div class="product-card">
-          <img src="media/Rectangle 13.png" />
-          <div class="info">
-            <h3>Macchiato</h3>
-            <p>cofee 50% | milk 50%</p>
-            <small>$8.50</small>
+
+          <div class="activities column-three">
+            <h2>Company</h2>
+            <div class="sub-about">
+              <p>How we work</p>
+              <p>Terms of service</p>
+              <p>Pricing</p>
+              <p>FAQ</p>
+            </div>
           </div>
-          <a class="btn solid">Order now</a>
+
+          <div class="contact column-four">
+            <h2>Contact Us</h2>
+            <div div class="sub-about">
+              <p>
+                Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+                Bangalore-560016
+              </p>
+              <p>+1 202-918-2132</p>
+              <p>beanscene@mail.com</p>
+              <p>www.beanscene.com</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
